@@ -1,14 +1,22 @@
-const products = require("../services/products.js");
-const config = require("../services/config.js");
+const { getFullName, productType } = require("./services/products");
+const products = require("./services/products");
+
+const config = require("./services/config");
+const database = require("./services/database");
 
 async function main() {
-  console.log("Olã meu nome e system!");
+  console.log("carrinho compras:");
 
-  products.getFullName("001", "Mouse-G20-Pro");
-  products.getProductName("Mouse Pad");
+  getFullName("1", "teclado");
+  products.getFullName("1", "teclado");
 
-  console.log(config.devArea);
-  console.log(config.client);
+  console.log(productType);
+
+  // product.getFullName("408", "mousepad");
+  // product.getFullName("508", "mouse");
+  // product.getProductLabel("mousepad");
+
+  database.connectToDatabase("my-data");
 }
 
 main();
