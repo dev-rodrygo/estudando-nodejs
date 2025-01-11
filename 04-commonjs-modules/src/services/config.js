@@ -1,13 +1,13 @@
 const devArea = {
-  version: "01ab",
-  production: false,
-};
+    version: '01ab',
+    production: false
+}
 
 const client = {
-  device: "web",
-};
+    device: 'web'
+}
 
 module.exports = {
-  devArea,
-  client,
-};
+    devArea,
+    client
+}
