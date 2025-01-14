@@ -17,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/dev-rodrygo/estudando-nodejs/issues"
   },
-  "homepage": "https://github.com/dev-rodrygo/estudando-nodejs#readme"
+  "homepage": "https://github.com/dev-rodrygo/estudando-nodejs#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.20.0"
+  }
 }
