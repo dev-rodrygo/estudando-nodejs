@@ -1,5 +1,21 @@
 {
-  "devDependencies": {
-    "prettier": "3.4.2"
-  }
+  "name": "the-nodejs-xp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "array.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-rodrygo/estudando-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-rodrygo/estudando-nodejs/issues"
+  },
+  "homepage": "https://github.com/dev-rodrygo/estudando-nodejs#readme"
 }

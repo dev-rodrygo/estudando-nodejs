@@ -15,6 +15,7 @@ function addNumbers(number) {
     }
   }
 }
+
 addNumbers(20);
 console.log(`\nNumeros: ${numbers}\n`);
 console.log(`Numeros pares: ${numbersPar}\n`);
