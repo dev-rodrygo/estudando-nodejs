@@ -1,22 +1,16 @@
-const pedirPizza = new Promise((resolve, reject) => {
-    console.log('Pedido feito! Aguardando a pizza...')
+// Iterando sobre Promises com for await...of
 
-    setTimeout(() => {
-        const sucesso = false // Simula se a pizza será entregue ou não.
+const promessas = [
+    new Promise((resolve) => setTimeout(() => resolve('Primeiro'), 1000)),
+    new Promise((resolve) => setTimeout(() => resolve('Segundo'), 2000)),
+    new Promise((resolve) => setTimeout(() => resolve('Terceiro'), 3000)),
+    new Promise((resolve) => setTimeout(() => resolve('Quarto'), 4000)),
+]
 
-        if (sucesso) {
-            resolve('Pizza entregue!') // Se deu certo, a Promise é resolvida.
-        } else {
-            reject('Erro: A pizzaria não conseguiu entregar.') // Se deu errado, a Promise é rejeitada.
-        }
-    }, 3000) // Simula o tempo de espera (3 segundos).
-})
+async function exemplo() {
+    for await (let resultado of promessas) {
+        console.log(resultado)
+    }
+}
 
-// Consumindo a Promise
-pedirPizza
-    .then((mensagem) => {
-        console.log(mensagem) // Quando a Promise for resolvida, este código é executado.
-    })
-    .catch((erro) => {
-        console.error(erro) // Quando a Promise for rejeitada, este código é executado.
-    })
+exemplo()
