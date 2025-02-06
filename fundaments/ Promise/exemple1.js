@@ -1,5 +1,5 @@
 let promessa = new Promise((resolve, reject) => {
-    let sucesso = true
+    let sucesso = false
 
     if (sucesso) {
         resolve('Deu certo! ✅')
